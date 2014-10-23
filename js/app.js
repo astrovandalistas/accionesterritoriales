@@ -1,5 +1,6 @@
 $(document).foundation();
 
+console.log("ya");
 
       var siglas = Array(
         "Internet", "Censura", "Facebook", "No fue penal"

@@ -62,6 +62,9 @@ h1,h2,h3,h4,h5,h6, #menu {
 
 
 #cabecera {
+
+	height:10vh;
+
 	div {
 		text-align: center;
 		box-sizing: border-box;
@@ -107,12 +110,15 @@ h1,h2,h3,h4,h5,h6, #menu {
 
 
 #menu {
-	margin:20px 0;
+	margin-top:10px;
+	margin-bottom:10px;
 	font-size:13px;
 
 	.opcion_menu {
 		text-align:center;
 	}
+
+
 }
 
 
@@ -125,12 +131,19 @@ h1,h2,h3,h4,h5,h6, #menu {
 
 }
 
+
+
+#principal {
+	height:70vh;
+	overflow-y: scroll;
+}
+
 #bullets {
 	
-	height:300px;
+	height:200px;
 
 	.bullet {
-		height:300px;
+		height:200px;
 
 		position:relative;
 
@@ -179,3 +192,25 @@ h1,h2,h3,h4,h5,h6, #menu {
 	}
 
 }
+
+
+#footer {
+	height: 10vh;
+
+	#redes{
+		.icono {
+		}
+		img {
+			box-shadow: 2px 2px 2px #333;
+			width: 80%; margin-left:10%;
+		}
+	}
+}
+
+
+#entradas { height: 70vh; overflow: scroll; }
+
+
+
+
+#lateral  { height: 70vh; overflow: hidden; }
