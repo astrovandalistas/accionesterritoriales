@@ -47,12 +47,18 @@
 
       <div id="contenido" class="row">
 
-        <div id="entradas" class="large-9 columns">
+        <div id="entradas" class="large-8 columns">
           <?php entradas(); ?>
         </div>
 
-        <div id="lateral" class="large-3 columns">
+        <div id="lateral" class="large-4 columns">
+          <div id="redes" class="large-12 columns">
+           <?php redes(); ?>
+          </div>
+          <div class="contenidos_destacados">            
           <?php lateral(); ?>
+          </div>
+
         </div>
 
       </div>
@@ -61,13 +67,9 @@
 
 
     <div id="footer" class="row">
-     <div class="large-7 columns"></div> 
-     <div id="redes" class="large-5 columns">
-       <div class="icono large-3 columns"><a link=""><img src="img/redes/fb.png" alt=""></a></div>
-       <div class="icono large-3 columns"><a link=""><img src="img/redes/tw.png" alt=""></a></div>
-       <div class="icono large-3 columns"><a link=""><img src="img/redes/tvs.png" alt=""></a></div>
-       <div class="icono large-3 columns"><a link=""><img src="img/redes/gg.png" alt=""></a></div>
-     </div>
+     
+      <div class="large-12 columns"><a href="http://astrovandalistas.cc">*</a></div> 
+
     </div>
 
 
