@@ -159,33 +159,35 @@ function entrada() {
 	</nav>
 	<div class="contenido">
 		
-	<section id="secc_id1">
-		<h3>Título de sección</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-	</section>		
-	<section id="secc_id2">
-		<h3>Título de sección</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-	</section>
-	<section id="secc_id3">
+		<div class="section" id="secc_id1">
 			<h3>Título de sección</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-	</section>		
-	<section id="secc_id4">
-		<h3>Título de sección</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-	</section>
+		</div>		
+		<div class="section" id="secc_id2">
+			<h3>Título de sección</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="section" id="secc_id3">
+				<h3>Título de sección</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>		
+		<div class="section" id="secc_id4">
+			<h3>Título de sección</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		
 	</div>
 
 </article>
+
 <?php
 
 

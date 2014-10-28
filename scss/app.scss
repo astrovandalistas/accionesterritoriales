@@ -146,6 +146,10 @@ img {
 		text-align:center;
 	}
 
+	h6 {
+		font-size: 12px;
+	}
+
 
 }
 
@@ -278,9 +282,21 @@ img {
 
 
 #entrada {
+	#subMenu {
+		li {
+			&.active {
+				font-weight:bold;
+			}
+		}
+	}
 	.contenido {
 		max-height:50vh;
 		overflow-y: scroll;
+
+		.section {
+			margin:15px 0;
+			height:50vh;
+		}
 	}
 }
 

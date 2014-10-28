@@ -25,7 +25,7 @@
   $('#subMenu li').click(function(){
     var id = $(this).attr('id').split('_')[1];
 
-    var sel = '.contenido section[id$='+id+']';
+    var sel = '.contenido .section[id$='+id+']';
 
     var targetDivScroll = $(sel).offset().top;
     var parentTop  = $('.contenido').offset().top;
@@ -40,26 +40,5 @@
 
 
 
-
-
-  var scrollTimer;
-
-  $('#entrada .contenido').scroll(function(){
-
-      if ( scrollTimer ) clearTimeout(scrollTimer);
-
-      scrollTimer = setTimeout(function(){
-
-      $('.contenido section').each(function(){
-        if( $(this).visible() ) {
-          $('#subMenu li').eq( $(this).index() ).addClass('active');
-          $('#subMenu li').eq( $(this).index() ).siblings().removeClass('active');
-        }
-      });
-      }, 100);
-  });
-
-  
-  
 
 </script>

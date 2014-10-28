@@ -25,7 +25,7 @@ require('funciones.php');
   </script>
 
   <script src="bower_components/slick.js/slick/slick.min.js"></script>
-
+  
 
 </head>
 <body>
