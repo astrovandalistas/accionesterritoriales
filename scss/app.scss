@@ -55,8 +55,16 @@
 
 }
 
+
+
 h1,h2,h3,h4,h5,h6, #menu {
-		font-family: 'soberana_titularbold';
+		font-family: 'Cardo', serif;
+		letter-spacing:1px;
+		text-transform: uppercase;
+		b {
+			font-weight:normal;
+			font-size:120%;
+		}
 }
 
 
@@ -265,6 +273,14 @@ img {
 	height: 90vh; overflow-y: scroll;
 	.entrada {
 		@extend .mBtm;
+	}
+}
+
+
+#entrada {
+	.contenido {
+		max-height:50vh;
+		overflow-y: scroll;
 	}
 }
 

@@ -1,6 +1,19 @@
+function capitalize(sel) {
+  $(sel).each( function(){
+    var e = $(this);
+    txt = e.html();
+    var ws = txt.split(" ");
+    e.html('');
+    for( i in ws ) {
+      e.append( '<b>' + ws[i][0] + '</b>' + ws[i].substring(1) + " ");
+    }
+  });
+
+}
+
 $(document).foundation();
 
-console.log("ya");
+
 
       var siglas = Array(
         "Internet", "Censura", "Facebook", "No fue penal"
@@ -45,6 +58,8 @@ console.log("ya");
 
         $('#cabecera #titulo h5').html( palabra1 + " de " + palabra2 +   " del " + palabra3 );
 
+        capitalize('#cabecera #titulo h5');
+
       }
 
       $(document).ready(function(){
@@ -65,7 +80,7 @@ console.log("ya");
         });
 
 
-
+        capitalize('h1,h2,h3,h4,h5,h6');
       });
 
 

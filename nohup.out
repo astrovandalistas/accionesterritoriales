@@ -1420,3 +1420,10 @@
 (sublime_text:13870): GLib-CRITICAL **: Source ID 1106852 was not found when attempting to remove it
 
 (sublime_text:13870): GLib-CRITICAL **: Source ID 1120035 was not found when attempting to remove it
+
+(sublime_text:13870): GLib-CRITICAL **: Source ID 1129006 was not found when attempting to remove it
+
+(sublime_text:13870): GLib-CRITICAL **: Source ID 1129434 was not found when attempting to remove it
+
+(sublime_text:13870): GLib-CRITICAL **: Source ID 1129671 was not found when attempting to remove it
+sublime_text: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.

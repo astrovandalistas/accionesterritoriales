@@ -87,16 +87,16 @@ function menu(){
 ?>
 
 <div class="opcion_menu large-3 columns">
-	Inicio
+	<a href="#"><h6>Inicio</h6></a>
 </div>
 <div class="opcion_menu large-3 columns">
-	Tutorial
+	<a href="#"><h6>Tutorial</h6></a>
 </div>
 <div class="opcion_menu large-3 columns">
-	Acciones territoriales
+	<a href="#"><h6>Acciones territoriales</h6></a>
 </div>
 <div class="opcion_menu large-3 columns">
-	Colabora
+	<a href="#"><h6>Colabora</h6></a>
 </div>
 
 <?php
@@ -119,7 +119,7 @@ $ttl = "Nombre de Bullet";
 	<div class="cortina_holder revealOn"><div class="cortina">
 	</div></div>
 	<div class="titulo revealOn">
-		<h3><?php echo vcenter($ttl); ?></h3>
+		<?php echo vcenter( '<h3>' . $ttl . '</h3>' ); ?>
 	</div>
 
 
@@ -139,6 +139,57 @@ $ttl = "Nombre de Bullet";
 
 }
 
+function entrada() {
+	
+
+?>
+
+<article>
+	<header>
+		<h1>Título de la entrada</h1>
+	</header>
+	<nav id="subMenu">
+		<ul>
+			<li id="submenu_id1">Opción de Navegación</li>
+			<li id="submenu_id2">Opción de Navegación</li>
+			<li id="submenu_id3">Opción de Navegación</li>
+			<li id="submenu_id4">Opción de Navegación</li>
+			
+		</ul>
+	</nav>
+	<div class="contenido">
+		
+	<section id="secc_id1">
+		<h3>Título de sección</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</section>		
+	<section id="secc_id2">
+		<h3>Título de sección</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</section>
+	<section id="secc_id3">
+			<h3>Título de sección</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</section>		
+	<section id="secc_id4">
+		<h3>Título de sección</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatum soluta iusto.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos minus veniam quidem praesentium libero, qui ad laborum?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</section>
+	</div>
+
+</article>
+<?php
+
+
+}
 
 
 function entradas() {
@@ -158,7 +209,8 @@ for( $i = 0; $i<9; $i++ ) {
 				<h3>Título de Entrada</h3>
 			</div>
 			<div class="texto large-12 columns">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque culpa accusamus quas voluptatibus, doloremque iste.
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo magni et, hic deserunt incidunt nulla.</p>
+
 			</div>
 		</div>
 
@@ -179,13 +231,6 @@ for( $i = 0; $i<9; $i++ ) {
 }
 
 
-function entrada() {
-
-?>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sed exercitationem, aliquam tempora amet, obcaecati sit labore error blanditiis earum quo veniam, voluptate autem repellat esse ipsa ipsam! Voluptates expedita ut ea id natus. Officiis, rem id culpa aspernatur quis voluptates, voluptatum blanditiis repellendus modi aut eveniet necessitatibus velit, similique quidem soluta dolorem! Animi culpa, iusto natus nostrum. Reprehenderit ex voluptas fugit, eum laborum iste tempora nisi dolor architecto ipsa impedit repudiandae minus, placeat, ipsum minima! Laudantium atque harum repudiandae. Vel, soluta, eaque! Maxime, sapiente pariatur obcaecati, illum omnis tempore similique quae id repellendus delectus modi dolore incidunt fuga! Eligendi pariatur dolorum, illo deleniti officia nisi, reprehenderit laborum libero aut doloribus dolorem neque sint vel reiciendis odit quibusdam cum nostrum numquam illum ullam tenetur, amet possimus, ducimus quia. Ullam soluta animi molestiae commodi, voluptates quidem, neque mollitia maxime deserunt quam velit minus aut omnis et fugiat quos debitis quae necessitatibus.
-
-<?php
-}
 
 
 
