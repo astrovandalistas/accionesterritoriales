@@ -7,7 +7,8 @@
 
 
 
-    <script src="js/app.js"></script>
+	<?php require('footer_assets.php'); ?>
+
 
 
   </body>

@@ -1,3 +1,11 @@
+<?php
+/*
+Template Name: Inicio
+*/
+get_header();
+
+?>
+
 <div id="home" class="principal row">
  
   <div id="bullets" class="row">
@@ -25,3 +33,8 @@
 </div>
 
 </div><!-- .principal -->
+
+
+<?php
+get_footer();
+?>

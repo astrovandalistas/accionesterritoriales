@@ -64,7 +64,6 @@ $(document).foundation();
 
       $(document).ready(function(){
         
-        console.log("ct");
 
         cambiarTitulo();
 
@@ -80,7 +79,7 @@ $(document).foundation();
         });
 
 
-        capitalize('h1,h2,h3,h4,h5,h6');
+        //capitalize('h1,h2,h3,h4,h5,h6');
       });
 
 

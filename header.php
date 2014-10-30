@@ -2,6 +2,7 @@
 
 <?php
 
+require('html_generators.php');
 require('funciones.php');
 
 ?>
@@ -9,23 +10,14 @@ require('funciones.php');
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CODEPI</title>
-  <link rel="stylesheet" href="css/app.css" />
+  <title>Esto no es internet</title>
 
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  
+  <?php
 
-  <link rel="stylesheet" href="bower_components/slick.js/slick/slick.css" />
+  require('assets.php');
+  wp_head();
 
-  <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
-
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-
-  <script src="bower_components/foundation/js/foundation.min.js">
-  </script>
-
-  <script src="bower_components/slick.js/slick/slick.min.js"></script>
-  
+  ?>
 
 </head>
 <body>
