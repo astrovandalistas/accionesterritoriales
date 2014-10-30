@@ -157,7 +157,7 @@ function entradas() {
 
 
 			<div id="cnt_<?php echo $id; ?>" class="reveal-modal" data-reveal>
-				<?php echo $cnt; ?>
+				<?php echo '<h1>'.$ttl.'</h1>'.$cnt; ?>
 				<a class="close-reveal-modal">&#215;</a>
 			</div>
 
@@ -204,7 +204,7 @@ function lateral() {
 
 
 		<div id="cnt_<?php echo $id; ?>" class="reveal-modal" data-reveal>
-			<?php echo $cnt; ?>
+				<?php echo '<h1>'.$ttl.'</h1>'.$cnt; ?>
 			<a class="close-reveal-modal">&#215;</a>
 		</div>
 
@@ -246,7 +246,7 @@ function iconoRed($str) {
 			</a>
 
 			<div id="cnt_<?php echo $id; ?>" class="reveal-modal" data-reveal>
-				<?php echo $cnt; ?>
+				<?php echo '<h1>'.$ttl.'</h1>'.$cnt; ?>
 				<a class="close-reveal-modal">&#215;</a>
 			</div>
 
