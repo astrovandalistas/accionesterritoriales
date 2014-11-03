@@ -12,14 +12,32 @@ if (have_posts()) {
  	$date = get_the_date();
  	$author = get_the_author();
  	$content = get_the_content();
+	$content = preg_replace("/<img[^>]+\>/i", "", $content);
+	$content = preg_replace('/<a href=\"(.*?)\">(.*?)<\/a>/', "", $content);
+
+ 	$excerpt = get_the_excerpt();
+	$excerpt = preg_replace("/<img[^>]+\>/i", "", $excerpt);
+	$excerpt = preg_replace('/<a href=\"(.*?)\">(.*?)<\/a>/', "", $excerpt);
+
+/*
+	$doc = new DOMDocument();
+	$doc->loadHTML($excerpt);    
+	$selector = new DOMXPath($doc);
+
+	$result = $selector->query('//p');
+
+	// loop through all found items
+	foreach($result as $node) {
+	    var_dump( $node->nodeValue );
+	}
+*/
+
 
  }
 }
 
 
-
-
-// Set the content type to be XML, so that the browser will   recognise it as XML.
+// Set the excerpt type to be XML, so that the browser will   recognise it as XML.
 header( "content-type: application/xml; charset=ISO-8859-15" );
 
 // "Create" the document.
@@ -33,7 +51,7 @@ $xml_track = $xml->createElement( "Author", $author );
 $xml_album->appendChild( $xml_track );
 $xml_track = $xml->createElement( "Date", $date );
 $xml_album->appendChild( $xml_track );
-$xml_track = $xml->createElement( "Content", $content );
+$xml_track = $xml->createElement( "Excerpt", $excerpt );
 $xml_album->appendChild( $xml_track );
 
 $xml_album->appendChild( $xml_track );
@@ -42,5 +60,6 @@ $xml->appendChild( $xml_album );
 
 // Parse the XML.
 print $xml->saveXML();
+
 
 ?>

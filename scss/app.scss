@@ -45,6 +45,15 @@ a {
 }
 
 
+@font-face {
+  font-family: 'Cardo';
+  src: url('../fonts/Cardo-Regular.ttf');
+	/*
+	src: local('Graublau Web Regular'), local('Graublau Web'),
+    	url('GraublauWeb.otf') format('opentype');
+	*/
+}
+
 
 @font-face {
     font-family: 'soberana_titularbold';
