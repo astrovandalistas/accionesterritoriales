@@ -4,7 +4,7 @@ Template Name: XML
 */
 
 
-query_posts('orderby=rand&showposts=1'); 
+query_posts('orderby=rand&showposts=1&category_name=Manifiesto'); 
 if (have_posts()) {
  while (have_posts()) {
  	the_post();
@@ -18,20 +18,6 @@ if (have_posts()) {
  	$excerpt = get_the_excerpt();
 	$excerpt = preg_replace("/<img[^>]+\>/i", "", $excerpt);
 	$excerpt = preg_replace('/<a href=\"(.*?)\">(.*?)<\/a>/', "", $excerpt);
-
-/*
-	$doc = new DOMDocument();
-	$doc->loadHTML($excerpt);    
-	$selector = new DOMXPath($doc);
-
-	$result = $selector->query('//p');
-
-	// loop through all found items
-	foreach($result as $node) {
-	    var_dump( $node->nodeValue );
-	}
-*/
-
 
  }
 }
