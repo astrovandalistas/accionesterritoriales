@@ -51,7 +51,7 @@ $xml_track = $xml->createElement( "Author", $author );
 $xml_album->appendChild( $xml_track );
 $xml_track = $xml->createElement( "Date", $date );
 $xml_album->appendChild( $xml_track );
-$xml_track = $xml->createElement( "Content", $excerpt );
+$xml_track = $xml->createElement( "Content", str_replace('[&hellip;]', '', $excerpt) );
 $xml_album->appendChild( $xml_track );
 
 //$xml_album->appendChild( $xml_track );
