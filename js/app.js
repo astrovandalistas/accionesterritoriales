@@ -75,7 +75,17 @@ $(document).foundation();
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
-          dots: true
+          dots: true,
+          responsive: [
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+                
+            }
+          }
+          ]
         });
 
 

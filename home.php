@@ -8,7 +8,7 @@ get_header();
 
 <div id="home" class="principal row">
  
-  <div id="bullets" class="row">
+  <div id="bullets" class="large-12 medium-10 medium-offset-1 small-10 small-offset-1 columns">
     <?php bullets(); ?>                                             
   </div>
 

@@ -14,21 +14,21 @@ function site_header(){
 
 	?>
 
-	<div id="logo" class="large-4 medium-6 small-8 columns">        
+	<div id="logo" class="large-4 medium-6 small-12 columns">        
 
-		<div id="nombre" class="large-7 columns">
-			<div id="siglas" class="large-12 columns">
+		<div id="nombre" class="small-7 columns">
+			<div id="siglas" class="small-12 columns">
 				<h1></h1>
 			</div>
-			<div id="bandera" class="large-12 columns">
+			<div id="bandera" class="small-12 columns">
 				<img src="<?php echo themeDir(); ?>/img/bandera.png" alt="">
 			</div>
-			<div id="titulo" class="large-12 columns">
+			<div id="titulo" class="small-12 columns">
 				<h5></h5>
 			</div>
 		</div>
 
-		<div id="escudo" class="large-5 columns">
+		<div id="escudo" class="small-5 columns">
 			<img src="<?php echo themeDir(); ?>/img/escudo.png" alt="">
 		</div>
 
@@ -41,23 +41,25 @@ function site_header(){
 
 function menu(){
 
-	?>
+	$page = get_page_by_title("Inicio");
+	$children = get_posts( array(
+		'post_type' => 'page',
+		'post_parent' => $page->ID,
+		'child_of' => $page->ID ) );
 
-	<div class="opcion_menu large-3 columns">
-		<a href="#"><h6>Inicio</h6></a>
-	</div>
-	<div class="opcion_menu large-3 columns">
-		<a href="#"><h6>Tutorial</h6></a>
-	</div>
-	<div class="opcion_menu large-3 columns">
-		<a href="#"><h6>Acciones territoriales</h6></a>
-	</div>
-	<div class="opcion_menu large-3 columns">
-		<a href="#"><h6>Colabora</h6></a>
-	</div>
+	echo makeDiv("", "opcion_menu large-3 columns",
+		'<h6>'.get_the_title($page->ID). '</h6>',
+		get_the_permalink( $page->ID )
+	);
+	foreach ( $children as $child ) { 
 
-	<?php
+		echo makeDiv("", "opcion_menu large-3 columns",
+			'<h6>'.get_the_title($child->ID). '</h6>',
+			get_the_permalink( $child->ID )
+		);		
+	}
 
+	
 }
 
 
@@ -65,7 +67,7 @@ function menu(){
 
 function bullets() {
 
-	$q = new WP_Query(array('post_type'=>'post','category_name'=>Bullets));
+	$q = new WP_Query(array('post_type'=>'post','category_name'=>'Bullets'));
 	if( $q -> have_posts() ) {
 		while( $q -> have_posts() ) {
 
